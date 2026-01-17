@@ -1,4 +1,14 @@
 /* ========================================
+   Projects Section Styles
+   ======================================== */
+
+.projects-section {
+    padding: 100px 0;
+    background: #ffffff;
+    position: relative;
+}
+
+.projects-section::before {
    Services Section - Core Styles
    ======================================== */
 
@@ -25,6 +35,10 @@
     left: 0;
     right: 0;
     height: 5px;
+    background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+}
+
+/* Section Headers */
     background: linear-gradient(90deg, #00adb5 0%, #0066cc 100%);
 }
 
@@ -48,6 +62,7 @@
     transform: translateX(-50%);
     width: 80px;
     height: 4px;
+    background: #667eea;
     background: #00adb5;
     border-radius: 2px;
 }
@@ -60,6 +75,64 @@
 }
 
 /* ========================================
+   Project Cards
+   ======================================== */
+.project-card {
+    background: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(102, 126, 234, 0.2);
+}
+
+/* Project Image */
+.project-image {
+    position: relative;
+    overflow: hidden;
+    height: 250px;
+}
+
+.project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover .project-image img {
+    transform: scale(1.1);
+}
+
+.project-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(102, 126, 234, 0.9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.project-card:hover .project-overlay {
+    opacity: 1;
+}
+
+.project-link {
+    width: 60px;
+    height: 60px;
+    background: #ffffff;
    Service Cards
    ======================================== */
 .service-card {
@@ -110,6 +183,137 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    color: #667eea;
+    font-size: 1.8rem;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.project-link:hover {
+    transform: scale(1.1);
+    color: #764ba2;
+}
+
+/* Project Content */
+.project-content {
+    padding: 1.5rem;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-title {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #1a1a2e;
+    margin-bottom: 0.8rem;
+}
+
+.project-description {
+    font-size: 0.95rem;
+    color: #6c757d;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    flex-grow: 1;
+}
+
+.project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.tag {
+    display: inline-block;
+    padding: 0.3rem 0.8rem;
+    background: #f0f0f0;
+    color: #667eea;
+    font-size: 0.8rem;
+    font-weight: 500;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+
+.tag:hover {
+    background: #667eea;
+    color: #ffffff;
+}
+
+/* ========================================
+   Skills Section
+   ======================================== */
+.skills-title {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #1a1a2e;
+    margin-top: 3rem;
+}
+
+.skill-item {
+    margin-bottom: 2rem;
+}
+
+.skill-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.8rem;
+}
+
+.skill-name {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #1a1a2e;
+}
+
+.skill-percentage {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #667eea;
+}
+
+.progress {
+    height: 12px;
+    background-color: #e9ecef;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.progress-bar {
+    background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+    transition: width 1.5s ease;
+}
+
+/* ========================================
+   Contact Section Styles
+   ======================================== */
+.contact-section {
+    padding: 100px 0;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    position: relative;
+}
+
+.contact-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 5px;
+    background: linear-gradient(90deg, #00adb5 0%, #0066cc 100%);
+}
+
+/* Contact Information */
+.contact-info {
+    background: #ffffff;
+    padding: 2.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    height: 100%;
+}
+
+.contact-info-title {
+    font-size: 1.8rem;
     margin-bottom: 1.5rem;
     transition: all 0.3s ease;
 }
@@ -131,6 +335,139 @@
     margin-bottom: 1rem;
 }
 
+.contact-info-text {
+    font-size: 1rem;
+    color: #6c757d;
+    margin-bottom: 2rem;
+}
+
+.contact-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 2rem;
+}
+
+.contact-icon {
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(135deg, #00adb5 0%, #0066cc 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1.2rem;
+    flex-shrink: 0;
+}
+
+.contact-icon i {
+    font-size: 1.5rem;
+    color: #ffffff;
+}
+
+.contact-details h4 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #1a1a2e;
+    margin-bottom: 0.3rem;
+}
+
+.contact-details p {
+    font-size: 0.95rem;
+    color: #6c757d;
+    margin: 0;
+}
+
+/* Social Links */
+.social-links {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.social-link {
+    width: 45px;
+    height: 45px;
+    background: #f8f9fa;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #667eea;
+    font-size: 1.3rem;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.social-link:hover {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: #ffffff;
+    transform: translateY(-3px);
+}
+
+/* ========================================
+   Contact Form Styles
+   ======================================== */
+.contact-form-wrapper {
+    background: #ffffff;
+    padding: 2.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.form-label {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #1a1a2e;
+    margin-bottom: 0.5rem;
+}
+
+.form-control {
+    padding: 0.8rem 1rem;
+    font-size: 1rem;
+    border: 2px solid #e9ecef;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.form-control:focus {
+    border-color: #00adb5;
+    box-shadow: 0 0 0 0.2rem rgba(0, 173, 181, 0.25);
+}
+
+.form-control.is-invalid {
+    border-color: #dc3545;
+}
+
+.form-control.is-valid {
+    border-color: #28a745;
+}
+
+.invalid-feedback {
+    font-size: 0.85rem;
+    color: #dc3545;
+    margin-top: 0.3rem;
+}
+
+textarea.form-control {
+    resize: vertical;
+    min-height: 120px;
+}
+
+/* Form Button */
+.btn-primary {
+    background: linear-gradient(135deg, #00adb5 0%, #0066cc 100%);
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-primary:hover {
+    background: linear-gradient(135deg, #008c94 0%, #0052a3 100%);
 .service-description {
     font-size: 1rem;
     color: #6c757d;
@@ -200,6 +537,25 @@
     box-shadow: 0 6px 20px rgba(0, 173, 181, 0.4);
 }
 
+.btn-primary:active {
+    transform: translateY(0);
+}
+
+.btn-loader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Alert Messages */
+.alert {
+    border-radius: 8px;
+    padding: 1rem 1.2rem;
+    font-size: 0.95rem;
+}
+
+.alert i {
+    font-size: 1.2rem;
 /* ========================================
    Grid Spacing
    ======================================== */
@@ -217,6 +573,11 @@
    Responsive Design - Tablet
    ======================================== */
 @media (max-width: 991px) {
+    .projects-section,
+    .contact-section {
+        padding: 80px 0;
+    }
+    
     /* Container Adjustments */
     .container {
         max-width: 960px;
@@ -232,6 +593,17 @@
         font-size: 2.2rem;
     }
     
+    .project-image {
+        height: 220px;
+    }
+    
+    .skills-title {
+        font-size: 1.8rem;
+    }
+    
+    .contact-info,
+    .contact-form-wrapper {
+        padding: 2rem;
     .section-subtitle {
         font-size: 1rem;
     }
@@ -258,6 +630,11 @@
 }
 
 @media (max-width: 768px) {
+    .projects-section,
+    .contact-section {
+        padding: 60px 0;
+    }
+    
     /* Container Adjustments */
     .container {
         max-width: 720px;
@@ -274,6 +651,24 @@
     }
     
     .section-subtitle {
+        font-size: 1rem;
+    }
+    
+    .project-image {
+        height: 200px;
+    }
+    
+    .project-title {
+        font-size: 1.3rem;
+    }
+    
+    .skills-title {
+        font-size: 1.6rem;
+        margin-top: 2rem;
+    }
+    
+    .skill-item {
+        margin-bottom: 1.5rem;
         font-size: 0.95rem;
     }
     
@@ -311,6 +706,11 @@
    Responsive Design - Mobile
    ======================================== */
 @media (max-width: 576px) {
+    .projects-section,
+    .contact-section {
+        padding: 50px 0;
+    }
+    
     /* Container Adjustments */
     .container {
         max-width: 100%;
@@ -335,6 +735,93 @@
     
     .section-subtitle {
         font-size: 0.9rem;
+    }
+    
+    .project-card {
+        margin-bottom: 1.5rem;
+    }
+    
+    .project-image {
+        height: 180px;
+    }
+    
+    .project-content {
+        padding: 1.2rem;
+    }
+    
+    .project-title {
+        font-size: 1.2rem;
+    }
+    
+    .project-description {
+        font-size: 0.9rem;
+    }
+    
+    .tag {
+        font-size: 0.75rem;
+        padding: 0.25rem 0.6rem;
+    }
+    
+    .skills-title {
+        font-size: 1.5rem;
+        margin-top: 1.5rem;
+    }
+    
+    .skill-name {
+        font-size: 0.9rem;
+    }
+    
+    .skill-percentage {
+        font-size: 0.85rem;
+    }
+    
+    .progress {
+        height: 10px;
+    }
+    
+    .contact-info,
+    .contact-form-wrapper {
+        padding: 1.5rem;
+    }
+    
+    .contact-info-title {
+        font-size: 1.5rem;
+    }
+    
+    .contact-icon {
+        width: 45px;
+        height: 45px;
+    }
+    
+    .contact-icon i {
+        font-size: 1.3rem;
+    }
+    
+    .contact-details h4 {
+        font-size: 1rem;
+    }
+    
+    .contact-details p {
+        font-size: 0.9rem;
+    }
+    
+    .social-link {
+        width: 40px;
+        height: 40px;
+        font-size: 1.1rem;
+    }
+    
+    .form-label {
+        font-size: 0.9rem;
+    }
+    
+    .form-control {
+        padding: 0.7rem 0.9rem;
+        font-size: 0.95rem;
+    }
+    
+    .btn-primary {
+        padding: 0.8rem 1.5rem;
         line-height: 1.6;
     }
     
@@ -416,6 +903,21 @@
         font-size: 1.6rem;
     }
     
+    .project-image {
+        height: 160px;
+    }
+    
+    .skills-title {
+        font-size: 1.3rem;
+    }
+    
+    .contact-info-title {
+        font-size: 1.3rem;
+    }
+}
+
+/* ========================================
+   Utility Classes
     .service-card {
         padding: 1.2rem 1rem;
     }
@@ -436,6 +938,10 @@
     margin-bottom: 3rem !important;
 }
 
+.mt-3 {
+    margin-top: 1rem !important;
+}
+
 .mt-5 {
     margin-top: 3rem !important;
 }
@@ -449,6 +955,16 @@
     margin-left: auto !important;
 }
 
+.w-100 {
+    width: 100% !important;
+}
+
+.d-none {
+    display: none !important;
+}
+
+.d-flex {
+    display: flex !important;
 /* Ensure proper alignment */
 .row > * {
     flex-shrink: 0;
