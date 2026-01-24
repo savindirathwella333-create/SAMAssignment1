@@ -164,6 +164,7 @@ html {
 }
 
 /* Button Styles */
+/* ========================================
    Projects Section Styles
    ======================================== */
 
@@ -174,6 +175,16 @@ html {
 }
 
 .projects-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 5px;
+    background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+}
+
+/* ========================================
    Services Section - Core Styles
    ======================================== */
 
@@ -204,8 +215,6 @@ html {
 }
 
 /* Section Headers */
-    background: linear-gradient(90deg, #00adb5 0%, #0066cc 100%);
-}
 
 /* ========================================
    Section Header
@@ -298,6 +307,30 @@ html {
     width: 60px;
     height: 60px;
     background: #ffffff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.project-link:hover {
+    background: #667eea;
+    transform: scale(1.1);
+}
+
+.project-link a {
+    color: #667eea;
+    text-decoration: none;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.project-link:hover a {
+    color: #ffffff;
+}
+
+/* ========================================
    Service Cards
    ======================================== */
 .service-card {
@@ -633,6 +666,8 @@ textarea.form-control {
 
 .btn-primary:hover {
     background: linear-gradient(135deg, #008c94 0%, #0052a3 100%);
+}
+
 .service-description {
     font-size: 1rem;
     color: #6c757d;
@@ -770,6 +805,9 @@ textarea.form-control {
     
     .navbar-nav .nav-link {
         padding: 0.7rem 1rem !important;
+    }
+}
+
 .btn-primary:active {
     transform: translateY(0);
 }
@@ -789,6 +827,8 @@ textarea.form-control {
 
 .alert i {
     font-size: 1.2rem;
+}
+
 /* ========================================
    Grid Spacing
    ======================================== */
@@ -904,6 +944,8 @@ textarea.form-control {
     
     #heroCarousel {
         min-height: 450px;
+    }
+    
     .projects-section,
     .contact-section {
         padding: 60px 0;
@@ -1203,7 +1245,9 @@ textarea.form-control {
 
 .section-padding {
     padding: 5rem 0;
-    .service-card {
+}
+
+.service-card {
         padding: 1.2rem 1rem;
     }
     
@@ -1250,6 +1294,8 @@ textarea.form-control {
 
 .d-flex {
     display: flex !important;
+}
+
 /* Ensure proper alignment */
 .row > * {
     flex-shrink: 0;
