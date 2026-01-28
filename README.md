@@ -45,7 +45,7 @@ We implemented the following branching strategy:
 * [No List specific features developed]
 * [chore: add deployment workflow to deploy main branch to Vercel,
     updated servicessection and images,Merge pull request #5 from savindirathwella333-create/feature_malki1]
-### [Yasith Kavinda]
+### [Yasith Shavinda]
 * [No List specific features developed]
 * [chore: add deployment workflow to deploy main branch to Vercel,
     Merge branch 'develop' into feature_yasith1,updated projects and form,Merge pull request #6 from savindirathwella333-create/feature_yasith1]
