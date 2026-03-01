@@ -1,0 +1,25 @@
+# Git files
+.git
+.gitignore
+
+# PDF files (not needed in container)
+*.pdf
+
+# Documentation
+README.md
+
+# IDE/Editor config
+.vscode
+.idea
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Node modules
+node_modules
+npm-debug.log
+
+# Environment files (credentials handled via docker-compose)
+backend/.env
+.env
