@@ -14,14 +14,22 @@ This project is designed to teach a 3-person development team how to collaborate
 * bootstrap 5
 * GitHub Actions
 * Netlify
+* Node.js
+* Express.js
+* MongoDB
+* JSON Web Tokens (JWT)
+* bcryptjs
+* Docker
+* Docker compose
+* dotenv
 ## Features
 * Feature 1- Navigation menu (Home, Services, Projects, Contact) 
 • Logo / Brand name 
 • Mobile hamburger menu 
 • Hero / Landing section 
-o Headline 
-o Short description 
-o Call-to-action button
+• Headline 
+• Short description 
+• Call-to-action button
 * Feature 2 - Services section (cards/grid with icons) 
 • Layout & spacing, section alignment 
 • Container widths 
@@ -36,21 +44,40 @@ We implemented the following branching strategy:
 * `feature/*` - Feature development branches
 ## Individual Contributions
 ### [Savindi Rathwella]
-* Repository setup and configuration
-* GitHub Actions CI/CD pipeline implementation
-* Deployment setup and management
-* chore: add deployment workflow to deploy main branch to Vercel,
-    Merge branch 'develop' into feature_Savindi,chore: add CI workflow for build, lint, and tests,create index,updated hero and nav,Merge pull request #4 from savindirathwella333-create/feature_Savindi,fix format issues,chore: add CI pipeline workflow,updated ci/cd files,edited readme,fix minor errors,Merge branch 'main' of https://github.com/savindirathwella333-create/SAMAssignment1
+- List specific features developed
+• Repository setup and configuration
+• GitHub Actions CI/CD pipeline implementation
+• Deployment setup and management
+• Docker setup
+• Navigation and hero section
+- List specific commits/contributions
+    * chore: add deployment workflow to deploy main branch to Vercel,
+    * Merge branch 'develop' into feature_Savindi,chore: add CI workflow for build, lint, and tests,create index,
+    * updated hero and nav,
+    * Merge pull request #4 from savindirathwella333-create/feature_Savindi,fix format issues,
+    * chore: add CI pipeline workflow,updated ci/cd files,edited readme,fix minor errors,
+    * Merge branch 'main' of https://github.com/savindirathwella333-create/SAMAssignment1
 ### [Malki Rajapaksha]
-* Feature 2 - Services section (cards/grid with icons)
-* chore: add deployment workflow to deploy main branch to Vercel,
-    updated servicessection and images,Merge pull request #5 from savindirathwella333-create/feature_malki1
+- List specific features developed
+• Layout & spacing, section alignment 
+• Container widths 
+• Responsive styling (tablet & mobile fixes)
+• images
+- List specific commits/contributions
+    * chore: add deployment workflow to deploy main branch to Vercel,
+    * updated servicessection and images,
+    * Merge pull request #5 from *savindirathwella333-create/feature_malki1
 ### [Yasith Shavinda]
-* Feature 3 -Projects / Skills section (cards, skills list/progress bars) 
-* chore: add deployment workflow to deploy main branch to Vercel,
-    Merge branch 'develop' into feature_yasith1,updated projects and form,Merge pull request #6 from savindirathwella333-create/feature_yasith1
-
----
+- List specific features developed
+    • Contact form (Name, Email, Message) 
+    • Basic validation & static success message 
+    • Page merging
+- List specific commits/contributions
+    * chore: add deployment workflow to deploy main branch to Vercel,
+    * Merge branch 'develop' into feature_yasith1,
+    * updated projects and form,
+    * Merge pull request #6 from savindirathwella333-create/feature_yasith1
+    
 
 ## 🐳 Docker Setup
 
