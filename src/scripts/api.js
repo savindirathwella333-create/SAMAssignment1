@@ -2,7 +2,7 @@
 // API & Authentication Service
 // ========================================
 
-const API_URL = 'http://localhost:3000/api';
+const API_URL = 'https://sam-assignment1.vercel.app/api';
 
 // ── Token & User Management ───────────────────────────────
 const saveToken   = (token) => localStorage.setItem('token', token);
