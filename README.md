@@ -1,7 +1,7 @@
 # SAMAssignment1
 #  Project Title - Freelance portfolio website
 ## Group Information
-* **Student 1:** [Savindi Rathwella] - [ITBIN-2313-0092] - Role: [DevOps/Release Manager/Backend developer]
+* **Student 1:** [Savindi Rathwella] - [ITBIN-2313-0092] - Role: [DevOps/Release Manager & Backend developer]
 * **Student 2:** [Malki Rajapaksha] - [ITBIN-2313-0088] - Role: [Frontend Developer1]
 * **Student 3:** [Yasith shawinda] - [ITBIN-2313-0107] - Role: [Fronted Developer2]
 ## Project Description
@@ -10,6 +10,8 @@ This project is designed to teach a 3-person development team how to collaborate
 🔗 **Live URL:** 
 [https://sam-assignment1.netlify.app/]
 
+# "The complete frontend can be viewed at: https://sam-assignment1.netlify.app/
+#  "The complete Backend can be viewed at: https://sam-assignment1.vercel.app/
 ## Technologies Used
 * HTML5, CSS3, JavaScript
 * bootstrap 5
@@ -141,7 +143,4 @@ SAMAssignment1/
 ## 🔧 Services
 | Service | Port | Description |
 |---------|------|-------------|
-| web     | 8081 | Nginx static web server |
-
-# "The complete frontend can be viewed at: https://sam-assignment1.netlify.app/
-#  "The complete Backend can be viewed at: https://sam-assignment1.vercel.app/
+| web     | 8081 | Nginx static web server
