@@ -15,9 +15,15 @@ app.use(cors({
 }));
 app.use(express.json());
 
-mongoose.connect(process.env.MONGO_URI)
-  .then(() => console.log('✅ MongoDB connected'))
-  .catch(err => console.error('❌ MongoDB error:', err));
+// ── MongoDB Connection (cached for serverless) ────────────
+let isConnected = false;
+async function connectDB() {
+  if (isConnected) return;
+  await mongoose.connect(process.env.MONGO_URI);
+  isConnected = true;
+  console.log('✅ MongoDB connected');
+}
+connectDB().catch(err => console.error('❌ MongoDB error:', err));
 
 // ── Routes ────────────────────────────────────────────────
 app.use('/api/auth',     authRoutes);
@@ -26,5 +32,11 @@ app.use('/api',          apiRoutes);
 
 app.get('/health', (req, res) => res.json({ status: 'ok' }));
 
-const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => console.log(`🚀 Server running on port ${PORT}`));
+// ── Local dev server (not used by Vercel) ─────────────────
+if (process.env.NODE_ENV !== 'production') {
+  const PORT = process.env.PORT || 3000;
+  app.listen(PORT, () => console.log(`🚀 Server running on port ${PORT}`));
+}
+
+// ── Export for Vercel ─────────────────────────────────────
+module.exports = app;
