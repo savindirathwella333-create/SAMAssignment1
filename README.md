@@ -31,19 +31,21 @@ This project is designed to teach a 3-person development team how to collaborate
 
 ## Features
 * Feature 1- Navigation menu (Home, Services, Projects, Contact) 
-• Logo / Brand name 
-• Mobile hamburger menu 
-• Hero / Landing section 
-• Headline 
-• Short description 
-• Call-to-action button
+    • Logo / Brand name 
+    • Mobile hamburger menu 
+    • Hero / Landing section 
+    • Headline 
+    • Short description 
+    • Call-to-action button
+
 * Feature 2 - Services section (cards/grid with icons) 
-• Layout & spacing, section alignment 
-• Container widths 
-• Responsive styling (tablet & mobile fixes)
+    • Layout & spacing, section alignment 
+    • Container widths 
+    • Responsive styling (tablet & mobile fixes)
+
 * Feature 3 - Projects / Skills section (cards, skills list/progress bars) 
-• Contact form (Name, Email, Message) 
-• Basic validation & static success message 
+    • Contact form (Name, Email, Message) 
+    • Basic validation & static success message 
 
 ## Branch Strategy
 We implemented the following branching strategy:
@@ -54,13 +56,13 @@ We implemented the following branching strategy:
 ## Individual Contributions
 ### [Savindi Rathwella]
 - List specific features developed
-• Repository setup and configuration
-• GitHub Actions CI/CD pipeline implementation
-• Deployment setup and management
-• Docker setup
-• Navigation and hero section
-• Basic validation & static success message 
-• Page merging
+    • Repository setup and configuration
+    • GitHub Actions CI/CD pipeline implementation
+    • Deployment setup and management
+    • Docker setup
+    • Navigation and hero section
+    • Basic validation & static success message 
+    • Page merging
 - List specific commits/contributions
     * chore: add deployment workflow to deploy main branch to Vercel,
     * Merge branch 'develop' into feature_Savindi,chore: add CI workflow for build, lint, and tests,create index,
@@ -75,9 +77,9 @@ We implemented the following branching strategy:
     * commit updated
 ### [Malki Rajapaksha]
 - List specific features developed
-• Layout & spacing, section alignment 
-• Container widths 
-• Responsive styling (tablet & mobile fixes)
+    • Layout & spacing, section alignment 
+    • Container widths 
+    • Responsive styling (tablet & mobile fixes)
 
 - List specific commits/contributions
     * chore: add deployment workflow to deploy main branch to Vercel,
