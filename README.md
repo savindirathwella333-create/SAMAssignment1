@@ -10,9 +10,9 @@ This project is designed to teach a 3-person development team how to collaborate
 
 ## Live Deployment
 🔗 **Live URL:** 
-[https://sam-assignment1.netlify.app/]
+[https://sam-assignment1-bo58.vercel.app/]
 
-##### "The complete frontend can be viewed at: https://sam-assignment1.netlify.app/
+##### "The complete frontend can be viewed at: https://sam-assignment1-bo58.vercel.app/
 #####  "The complete Backend can be viewed at: https://sam-assignment1.vercel.app/
 
 ## Technologies Used
